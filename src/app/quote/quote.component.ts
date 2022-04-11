@@ -10,11 +10,26 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
 
-    {name:'Genesis', say:'In the begining there was terminal', author:'Harrison Gitau'},
-    {name:'Learning', say:'It is super easy tp forget stuff if you do not write them down', author:'Steve Fenton'},
-    {name:'Life', say:'Just Do It', author:'Nike'}
+    new Quote('Genesis', 'In the begining there was terminal', 'Harrison Gitau'),
+    new Quote('Learning','It is super easy tp forget stuff if you do not write them down', 'Steve Fenton'),
+    new Quote('Life', 'Just Do It', 'Nike')
   ];
 
+//toggle logic
+
+toggleQuoteDetails(index){
+  this.quotes[index].showDescription = !this.quotes[index].showDescription;
+} 
+
+deleteQuote(deletedQuote, index){
+  if(deletedQuote){
+    let deleteMessage = confirm(`Are you sure you want to delete ${this.quotes[index].author}'s quote?`)
+
+    if(deleteMessage){
+      this.quotes.splice(index, 1);
+    }
+  }
+}
   constructor() { }
 
   ngOnInit(): void {

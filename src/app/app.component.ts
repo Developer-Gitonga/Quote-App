@@ -9,11 +9,6 @@ import { Quote } from './quote';
 export class AppComponent {
   // quote = 'In the begining, there was terminal'
 
-  // quotes:Quote[] = [
-  //   {say:'In the begining there was terminal', author:'Harrison Gitau'},
-  //   {say:'It is super easy tp forget stuff if you do not write them down', author:'Steve Fenton'},
-  //   {say:'Just Do It', author:'Nike'}
-  // ];
   constructor(){
     
   }

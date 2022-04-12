@@ -19,7 +19,6 @@ export class QuoteComponent implements OnInit {
 //add client quote
 addNewQuote(qoute: any){
   let quoteLength = this.quotes.length;
-  qoute.title = quoteLength;
   
   this.quotes.push(qoute)
 }

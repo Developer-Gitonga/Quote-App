@@ -10,9 +10,10 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
 
-    new Quote('Genesis', 'In the begining there was terminal', 'Harrison Gitau'),
-    new Quote('Learning','It is super easy tp forget stuff if you do not write them down', 'Steve Fenton'),
-    new Quote('Life', 'Just Do It', 'Nike')
+    new Quote('Genesis', 'Shinobi bros', 'In the begining there was terminal', 'Kaguya', new Date()),
+    new Quote('Learning', 'Shinobi bros','It is super easy tp forget stuff if you do not write them down', 'Jiraiya', new Date()),
+    new Quote('Life', 'Shinobi bros', 'Just Do It', 'Kawaki', new Date())
+    
   ];
 
 //toggle logic
@@ -29,6 +30,13 @@ deleteQuote(deletedQuote, index){
       this.quotes.splice(index, 1);
     }
   }
+}
+//add client quote
+addNewQuote(qoute){
+  let quoteLength = this.quotes.length;
+  qoute.name = quoteLength;
+  qoute.say = quoteLength;
+  this.quotes.push(qoute)
 }
   constructor() { }
 

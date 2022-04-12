@@ -7,6 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-likes.component.css']
 })
 export class QuoteLikesComponent implements OnInit {
+
   @Input() quote: Quote;
   @Output() deleteQuote=new EventEmitter<boolean>();
 
@@ -14,6 +15,7 @@ export class QuoteLikesComponent implements OnInit {
   upvoteThisQuote(){
     this.likes++;
   };
+  
   dislikes: number = 0;
   downVoteThisQuote(){
     this.dislikes--;

@@ -11,10 +11,18 @@ export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
 
     new Quote('Genesis', 'Shinobi bros', 'In the begining there was terminal', 'Kaguya', new Date()),
-    new Quote('Learning', 'Shinobi bros','It is super easy tp forget stuff if you do not write them down', 'Jiraiya', new Date()),
+    new Quote('Learning', 'Shinobi bros','It is super easy to forget stuff if you do not write them down', 'Jiraiya', new Date()),
     new Quote('Life', 'Shinobi bros', 'Just Do It', 'Kawaki', new Date())
     
   ];
+
+//add client quote
+addNewQuote(qoute: any){
+  let quoteLength = this.quotes.length;
+  qoute.title = quoteLength;
+  
+  this.quotes.push(qoute)
+}
 
 //toggle logic
 
@@ -31,13 +39,7 @@ deleteQuote(deletedQuote, index){
     }
   }
 }
-//add client quote
-addNewQuote(qoute){
-  let quoteLength = this.quotes.length;
-  qoute.name = quoteLength;
-  qoute.say = quoteLength;
-  this.quotes.push(qoute)
-}
+
   constructor() { }
 
   ngOnInit(): void {

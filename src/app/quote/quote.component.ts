@@ -10,9 +10,9 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
 
-    new Quote('Genesis', 'Shinobi bros', 'In the begining there was terminal', 'Kaguya', new Date()),
-    new Quote('Learning', 'Shinobi bros','It is super easy to forget stuff if you do not write them down', 'Jiraiya', new Date()),
-    new Quote('Life', 'Shinobi bros', 'Just Do It', 'Kawaki', new Date())
+    new Quote('Genesis', 'Shinobi Bros', 'In the begining there was terminal', 'Kaguya', new Date()),
+    new Quote('Learning', 'Shinobi Bros','It is super easy to forget stuff if you do not write them down', 'Jiraiya', new Date()),
+    new Quote('Life', 'Shinobi Bros', 'Just Do It', 'Kawaki', new Date())
     
   ];
 

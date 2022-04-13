@@ -1,5 +1,6 @@
 quote-component{
-    background-color: #220626;
+    background-color: red;
+    color: azure;
 }
 
 ul{
@@ -15,4 +16,14 @@ ul{
     background-color: #221b1c;
     color:whitesmoke;
     border-radius: 1rem;
+}
+.navbar{
+    color: whitesmoke;
+    background-color: rgb(48, 41, 54);
+}
+a{
+    color: whitesmoke;
+}
+nav{
+    color: aliceblue;
 }

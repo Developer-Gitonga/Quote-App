@@ -1,7 +1,18 @@
 quote-component{
-    background-color: #0b1e4e;
+    background-color: #220626;
 }
 
 ul{
     list-style: none;
+}
+.card{
+    background-color: rgb(89, 0, 255);
+    width:600px;
+    border:25px;
+    height:auto
+}
+.container{
+    background-color: #221b1c;
+    color:whitesmoke;
+    border-radius: 1rem;
 }

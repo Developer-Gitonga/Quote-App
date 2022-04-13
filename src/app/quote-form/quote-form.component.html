@@ -33,7 +33,7 @@
         </div>
         <div class="form-group row mt-2">
             <div>
-                <label for="quote">Enter Quote</label>
+                <label for="quote">Enter Quote </label>
             </div>
             <div>
                 <textarea class="form-control" id="userQuote" rows="4" [(ngModel)]="newQuote.say" name="say" #say="ngModel" required></textarea>
@@ -45,7 +45,7 @@
         </div>
         <div class="form-group row">
             <div>
-                <label for="name">Quote said by;</label>
+                <label for="name">Quote said by; </label>
             </div>
             <div class="col-md-5 col-sm-6">
                 <input type="text" class="form-control" id="authorName" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
@@ -56,10 +56,10 @@
             </div>
         </div>
         <div class="col-md-6 mt-3">
-            <label for="createdDate">Date</label>
+            <label for="createdDate">Date </label>
             <input type="date" id="posted" [(ngModel)]="newQuote.postedDate" name="postedDate" #postedDate="ngModel" required>
         </div>
-        <p class="mt-2"> This quote will be posted on; {{newQuote.postedDate|date}} </p>
+        <p class="mt-2"> Posted on; {{newQuote.postedDate|date}} </p>
 
         
         <div [hidden]="postedDate.valid || postedDate.valid" class="alert alert-danger">

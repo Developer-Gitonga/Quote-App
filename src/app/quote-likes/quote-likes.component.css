@@ -1,3 +1,9 @@
 delete{
     color: red;
 } 
+.container{
+    background-color: rgb(69, 79, 88);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
